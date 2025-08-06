@@ -16,7 +16,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "vite build && cp index.prod.html dist/index.html && cp _redirects dist/_redirects",
+    "build": "vite build && cp index.prod.html dist/index.html && cp _routes.json dist/_routes.json",
     "dev": "vite --open",
     "preview": "npx serve dist -p 4173 ",
     "type-check": "tsc --noEmit"
