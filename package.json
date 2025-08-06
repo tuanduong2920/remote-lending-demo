@@ -1,0 +1,39 @@
+{
+  "name": "rs-vue-weather",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/lib/index.mjs",
+  "module": "./dist/lib/index.mjs",
+  "types": "./dist/lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/lib/index.mjs",
+      "types": "./dist/lib/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && cp index.prod.html dist/index.html",
+    "dev": "vite --open",
+    "preview": "npx serve dist -p 4173 ",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "vue": "^3.5.18",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.9.2",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.6.0"
+  }
+}
