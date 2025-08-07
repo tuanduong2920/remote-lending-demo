@@ -9,6 +9,11 @@
     <div id="root"></div>
 
     <!-- Import từ source code cho development -->
-    <script type="module" src="/src/index.ts"></script>
+    <script type="module">
+      import { mount } from "/src/index.ts";
+
+      // Auto mount app
+      mount("#root");
+    </script>
   </body>
 </html>

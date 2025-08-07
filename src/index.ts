@@ -49,11 +49,3 @@ const mountLendingModule = (
   appInstance.mount(el);
 };
 export { mount, mountLendingModule };
-
-// Auto mount khi không phải library mode
-if (typeof window !== "undefined") {
-  const devRoot = document.querySelector("#root");
-  if (devRoot) {
-    mount("#root");
-  }
-}
